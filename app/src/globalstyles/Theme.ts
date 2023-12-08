@@ -17,6 +17,12 @@ interface Theme {
     },
     typography: {
         font: string
+    },
+    break: {
+        min: string,
+        small: string,
+        mediun: string,
+        large: string
     }
 }
 
@@ -41,5 +47,11 @@ export const theme: Theme = {
     },
     typography: {
         font: "'Inter', sans-serif"
+    },
+    break: {
+        min: '300px',
+        small: '600px',
+        mediun: '900px',
+        large: '1200px'
     }
 }

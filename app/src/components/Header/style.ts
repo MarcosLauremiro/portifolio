@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
-  background-color: ${({ theme }) => theme.color.black};
+  background-color: ${({ theme }) => theme.color.bc};
 
   font-family: ${({ theme }) => theme.typography.font};
 
@@ -18,7 +18,7 @@ export const HeaderStyle = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: ${({ theme }) => theme.break.large};
     width: 100%;
   }
 
@@ -32,7 +32,7 @@ export const HeaderStyle = styled.header`
     display: flex;
     align-items: center;
     gap: 2rem;
-    @media(max-width: 500px) {
+    @media(max-width: ${({ theme }) => theme.break.small}) {
         display: none;
     }
     a {

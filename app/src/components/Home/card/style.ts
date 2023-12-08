@@ -8,8 +8,17 @@ export const CardMeStyled = styled.div`
   font-family: ${({ theme }) => theme.typography.font};
   font-weight: 200;
 
-  margin: 60px 0 60px 0 ;
+  position: absolute;
 
+  top: 8%;
+  left: 20px;
+
+  @media (max-width: ${({ theme }) => theme.break.small}) {
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: -1px;
+  }
   img {
     width: 45px;
     clip-path: circle(50%);
