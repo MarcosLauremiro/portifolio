@@ -14,13 +14,13 @@ export const Card = (props:IProps) => {
     return(
         <CardStyle>
             <h1>{props.title}</h1>
-            <div>
-                <p>{props.lingue}</p>
-                <p>{props.descrip}</p>
+            <div className="tech">
+                <p className="lingue">{props.lingue}</p>
+                <p className="descri">{props.descrip}</p>
             </div>
-            <div>
-                <a href={props.linkCode}><FaGithub /> Github Code</a>
-                <a href={props.linkApli}><FaShare />  Aplicação</a>
+            <div className="buttons">
+                <a className="git" href={props.linkCode}><FaGithub /> Github Code</a>
+                <a className="apli" href={props.linkApli}><FaShare />  Aplicação</a>
             </div>
         </CardStyle>
     )

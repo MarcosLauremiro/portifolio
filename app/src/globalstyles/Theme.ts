@@ -28,7 +28,7 @@ interface Theme {
 
 export const theme: Theme = {
     color: {
-        bc: '#242124',
+        bc: '#0A0A0B',
         primary: '#BE5C3D',
         second: '#4A4436',
 
