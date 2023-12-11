@@ -49,7 +49,7 @@ export const theme: Theme = {
         font: "'Inter', sans-serif"
     },
     break: {
-        min: '300px',
+        min: '340px',
         small: '600px',
         mediun: '900px',
         large: '1200px'

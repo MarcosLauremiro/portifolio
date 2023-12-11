@@ -4,7 +4,7 @@ import { StyledProject } from "./style";
 
 export const Project = () => {
   return (
-    <StyledProject>
+    <StyledProject id="PROJECT">
       <div className="project-container">
         <div className="header-project">
           <h1>Meus projetos</h1>

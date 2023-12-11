@@ -49,6 +49,12 @@ export const StyledProject = styled.main`
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
+      @media (max-width: ${({ theme }) => theme.break.small}) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
     }
   }
 `;

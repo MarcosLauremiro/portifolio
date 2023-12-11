@@ -19,8 +19,8 @@ export const Card = (props:IProps) => {
                 <p className="descri">{props.descrip}</p>
             </div>
             <div className="buttons">
-                <a className="git" href={props.linkCode}><FaGithub /> Github Code</a>
-                <a className="apli" href={props.linkApli}><FaShare />  Aplicação</a>
+                <a target="blank" className="git" href={props.linkCode}><FaGithub /> Github Code</a>
+                <a target="blank" className="apli" href={props.linkApli}><FaShare />  Aplicação</a>
             </div>
         </CardStyle>
     )

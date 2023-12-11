@@ -1,3 +1,5 @@
+import { Contacts } from "./components/Contacts";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 import { Project } from "./components/Projects";
@@ -10,6 +12,8 @@ function App() {
       <Header/>
       <Home/>
       <Project/>
+      <Contacts/>
+      <Footer/>
     </>
   );
 }

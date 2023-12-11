@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.main`
-  background-color: #242124;
-  background-image: linear-gradient(160deg, #242124 0%, #4a4436 100%);
+  background-color: ${({ theme }) => theme.color.gray_900};
 
   height: calc(100vh - 3.5rem);
 
@@ -42,13 +41,15 @@ export const StyledHome = styled.main`
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        @media (max-width: ${({ theme }) => theme.break.small}) {
+          gap: 1rem;
+        }
       }
       .phrase {
-        text-transform: uppercase;
         font-size: 1.5rem;
-        line-height: normal 2;
-
+        line-height: 1.75;
         span {
+          font-weight: 500;
           color: ${({ theme }) => theme.color.primary};
         }
       }
@@ -62,6 +63,10 @@ export const StyledHome = styled.main`
         align-items: center;
         gap: 1rem;
         .see {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
           padding: 1rem 0 1rem 0;
           width: 140px;
 
@@ -73,6 +78,7 @@ export const StyledHome = styled.main`
           color: ${({ theme }) => theme.color.white};
           font-weight: 600;
           font-family: ${({ theme }) => theme.typography.font};
+          text-decoration: none;
           font-size: 0.88rem;
           &:hover {
             cursor: pointer;
@@ -98,12 +104,17 @@ export const StyledHome = styled.main`
 
       .techs {
         width: 100%;
-
+        display: flex;
+        gap: 0.6rem;
         @media (max-width: ${({ theme }) => theme.break.small}) {
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: center;
+          .tech {
+            width: 60px;
+          }
+        }
+        @media (max-width: ${({ theme }) => theme.break.min}){
+          .tech {
+            width: 50px;
+          }
         }
       }
     }

@@ -23,18 +23,18 @@ export const Home = () => {
               e Gerenciamento de Dados
             </p>
             <div className="butons">
-              <button className="see">Ver Projetos</button>
-              <button className="git">
-                <FaGithub size="20px" />
-              </button>
+              <a target="blank" href="https://github.com/MarcosLauremiro?tab=repositories" className="see">Ver Projetos</a>
+              <a target="blank" href="https://github.com/MarcosLauremiro" className="git">
+                <FaGithub color='black' size="20px" />
+              </a>
             </div>
           </div>
           <div className="techs">
-              <FaHtml5 size="100px" opacity=".5" />
-              <FaCss3Alt size="100px" opacity=".5" />
-              <FaNode size="100px" opacity=".5" />
-              <FaNodeJs size="100px" opacity=".5" />
-              <FaReact size="100px" opacity=".5" />
+              <FaHtml5 className='tech' size="100px" opacity=".5" />
+              <FaCss3Alt className='tech' size="100px" opacity=".5" />
+              <FaNode className='tech' size="100px" opacity=".5" />
+              <FaNodeJs className='tech' size="100px" opacity=".5" />
+              <FaReact className='tech' size="100px" opacity=".5" />
           </div>
         </div>
         <div className="rigth-side"></div>
