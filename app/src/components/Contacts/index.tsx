@@ -43,7 +43,7 @@ export const Contacts = () => {
             </div>
           </div>
           <div className="contact">
-            <a target="blank" href="">
+            <a target="blank" href="https://t.me/+5599991598763">
               <FaTelegramPlane color="black" size="20" />
             </a>
             <div>

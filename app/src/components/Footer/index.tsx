@@ -16,13 +16,13 @@ export const Footer = () => {
           </div>
         </div>
         <div className=" buttons">
-          <a className="insta" href="">
+          <a className="insta" target="blank" href="https://instagram.com/miro.dev_?igshid=OGQ5ZDc2ODk2ZA==">
             <FaInstagram size="30" />
           </a>
-          <a className="link" href="">
+          <a className="link" target="blank" href="https://www.linkedin.com/in/marcos-lauremiro-melo-silva/">
             <FaLinkedin size="30" />
           </a>
-          <a href="">
+          <a target="blank" href="https://t.me/+5599991598763">
           <FaTelegram size="30" />
           </a>
         </div>
