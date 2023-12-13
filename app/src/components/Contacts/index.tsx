@@ -19,7 +19,7 @@ export const Contacts = () => {
           <div className="contact">
             <a
               target="blank"
-              href="marcoslauremiro@gmail.com"
+              href=""
             >
               <MdOutlineMailOutline color="black" size="20" />
             </a>
