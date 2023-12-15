@@ -1,3 +1,4 @@
+import { About } from "./components/About";
 import { Contacts } from "./components/Contacts";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -8,12 +9,13 @@ import { GlobalStyle } from "./globalstyles/GlobalStyle";
 function App() {
   return (
     <>
-      <GlobalStyle/>
-      <Header/>
-      <Home/>
-      <Project/>
-      <Contacts/>
-      <Footer/>
+      <GlobalStyle />
+      <Header />
+      <Home />
+      <About />
+      <Project />
+      <Contacts />
+      <Footer />
     </>
   );
 }
